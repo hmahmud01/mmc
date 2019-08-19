@@ -848,13 +848,15 @@ h5 {
 .nav > li > a {
   color: #a7b1c2;
   font-weight: 600;
-  padding: 14px 20px 14px 25px;
+  /* padding: 14px 20px 14px 25px; */
+  padding: 14px 0 14px 0;
   display: block;
 }
 .nav.metismenu > li {
   display: block;
   width: 100%;
   position: relative;
+  text-align: center;
 }
 .nav.metismenu .dropdown-menu > li > a {
   padding: 3px 20px;
@@ -881,7 +883,7 @@ h5 {
   background-color: transparent;
 }
 .nav > li > a i {
-  margin-right: 6px;
+  /* margin-right: 6px; */
 }
 .navbar {
   border: 0;
@@ -1269,7 +1271,11 @@ body.mini-navbar .navbar-static-side {
 body.mini-navbar .profile-element,
 body.mini-navbar .nav-label,
 body.mini-navbar .navbar-default .nav li a span {
-  display: none;
+  /* display: none; */
+  /* below codes are added to make the change */
+  display: block;
+  font-size: 11px;
+  font-weight: lighter;
 }
 body.canvas-menu .profile-element {
   display: block;
@@ -4503,8 +4509,9 @@ video {
   background: #f8fafb;
 }
 .inmodal .modal-header {
-  padding: 30px 15px;
-  text-align: center;
+  /* padding: 30px 15px; */
+  padding: 15px 30px;
+  /* text-align: center; */
   display: block;
 }
 .animated.modal.fade .modal-dialog {
@@ -4514,7 +4521,8 @@ video {
   transform: none;
 }
 .inmodal .modal-title {
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 16px;
 }
 .inmodal .modal-icon {
   font-size: 84px;
@@ -9570,4 +9578,20 @@ body.md-skin {
 
 .team-member-ico{
   width: 10px;
+}
+
+.appli-width{
+  width: 48px;
+}
+
+.edit-member-row {
+  margin-left: 0px;
+}
+
+.edit-member-image {
+  margin-top: 5px;  
+}
+
+.edit-member-text {
+  margin-left: 32px;
 }

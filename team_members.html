@@ -13,16 +13,17 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
 </head>
 
-<body class="">
+<body class="mini-navbar">
 
     <div id="wrapper">
         <div class="row border-bottom">
             <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                <!-- <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a> -->
                 <a class="minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-plus"></i> <strong>CREATE</strong> </a>
                 <form role="search" class="navbar-form-custom" action="search_results.html">
                     <div class="form-group">
@@ -140,8 +141,7 @@
                             </li>
                         </ul>
                     </li>
-    
-    
+
                     <li>
                         <a href="login.html">
                             <i class="fa fa-sign-out"></i> Log out
@@ -200,7 +200,6 @@
                             </div>
                             <div class="ibox-content">
                                 <div class="project-list">
-
                                     <table class="table table-hover">
                                         <tbody>
                                             <tr>
@@ -213,8 +212,8 @@
                                                     <small>Administrator <i class="fa fa-circle"></i> mahatasim@weaverbd.com</small>
                                                 </td>
                                                 <td class="project-actions">
-                                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-edit"></i></a>
-                                                    <a href="#" class="btn btn-white btn-sm"><i class="fa fa-trash"></i></a>
+                                                    <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#editMember"><i class="fa fa-edit"></i></a>
+                                                    <a href="#" class="btn btn-white btn-sm" data-toggle="modal" data-target="#deleteMember"><i class="fa fa-trash"></i></a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -296,6 +295,89 @@
                                                     <button type="button" class="btn btn-primary">Invite</button>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal inmodal fade" id="editMember" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h5 class="modal-title">Edit Team Member</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row edit-member-row">                                                
+                                                <div class="project-people team-member-ico edit-member-image">
+                                                    <a href=""><img alt="image" class="rounded-circle" src="img/a3.jpg"></a>
+                                                </div>
+                                                <div class="project-title edit-member-text">
+                                                    <a href="profile.html">Mahatasim Rahman</a>
+                                                    <br/>
+                                                    <small>Administrator <i class="fa fa-circle"></i> mahatasim@weaverbd.com</small>
+                                                </div>
+                                            </div>
+                                            <div class="row edit-member-row" style="margin-top:10px;">
+                                                <div id="profile-action">
+                                                    <h4>Set Team Role</h4>
+                                                    <div id="area">                                                        
+                                                        <div class="checkbox">
+                                                            <input id="checkbox1" type="checkbox" checked="">
+                                                            <label for="checkbox1">
+                                                                Administrator
+                                                            </label>
+                                                            <input id="checkbox2" type="checkbox" checked="">
+                                                            <label for="checkbox2">
+                                                                Hiring Manager
+                                                            </label>
+                                                            <input id="checkbox3" type="checkbox" checked="">
+                                                            <label for="checkbox3">
+                                                                Interviewer
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal inmodal fade" id="deleteMember" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h5 class="modal-title">Delete Team Member</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row edit-member-row">                                                
+                                                <div class="project-people team-member-ico edit-member-image">
+                                                    <a href=""><img alt="image" class="rounded-circle" src="img/a3.jpg"></a>
+                                                </div>
+                                                <div class="project-title edit-member-text">
+                                                    <a href="profile.html">Mahatasim Rahman</a>
+                                                    <br/>
+                                                    <small>Administrator <i class="fa fa-circle"></i> mahatasim@weaverbd.com</small>
+                                                </div>
+                                            </div>
+                                            <div class="row edit-member-row" style="margin-top:10px;">
+                                                <h4>Are You Sure You want to Delete Mahatasim Rahman?</h4>
+                                                <div class="pull-right" style="margin-left:60%;">
+                                                    <a href="" class="btn btn-md btn-info">Yes</a>
+                                                    <a href="" class="btn btn-md btn-danger">No</a>
+                                                </div>
+                                                
+                                            </div>  
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
