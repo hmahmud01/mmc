@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MMC | Wever Innovations</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins/summernote/summernote-bs4.css" rel="stylesheet">
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <!-- form wizard css librarys -->
+    <!-- Font-->
+	<link rel="stylesheet" type="text/css" href="form_assets/css/roboto-font.css">
+	<link rel="stylesheet" type="text/css" href="form_assets/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- datepicker -->
+	<link rel="stylesheet" type="text/css" href="form_assets/css/jquery-ui.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="form_assets/css/style.css"/>
+
+</head>
+
+<body class="mini-navbar">
+
+    <div id="wrapper">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <!-- <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a> -->
+                <a class="minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-plus"></i> <strong>CREATE</strong> </a>
+                <form role="search" class="navbar-form-custom" action="search_results.html">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control search-position" name="top-search" id="top-search">
+                    </div>
+                </form>
+            </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown profile-element" style="margin-right:20px;">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block" style="color:black">Weaver Innovations<b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInTop m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="profile.html">
+                                        <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <small class="float-right">46h ago</small>
+                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="profile.html">
+                                        <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="float-right text-navy">5h ago</small>
+                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="profile.html">
+                                        <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="float-right">23h ago</small>
+                                        <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                        <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="mailbox.html" class="dropdown-item">
+                                        <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="mailbox.html" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                        <span class="float-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a href="profile.html" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="float-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a href="grid_options.html" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="float-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="notifications.html" class="dropdown-item">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+    
+    
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+    
+            </nav>
+            </div>
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Index</span> </a>
+                </li>
+                <li>
+                    <a href="jobs.html"><i class="fa fa-briefcase"></i> <span class="nav-label">Jobs</span> </a>
+                </li>
+                <li>
+                    <a href="candidates.html"><i class="fa fa-user"></i> <span class="nav-label">Candidates</span> </a>
+                </li>
+                <li>
+                    <a href="team.html"><i class="fa fa-users"></i> <span class="nav-label">Team</span> </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-sm-4">
+                    <h2> <span class="text-muted">(Draft)</span> Android Developer</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <strong>Create Job</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-sm-8">
+                    <div class="title-action">
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><i class="fa fa-circle-o text-danger" aria-hidden="true"></i>
+                                Draft </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <a href="" class="btn btn-primary">Save Draft</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                <form class="form-register" action="#" method="post">
+                <div id="form-total">
+                    <!-- SECTION 1 -->
+                    <h2>
+                        <span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+                        <span class="step-text">Job Detail</span>
+                    </h2>
+                    <section>
+                        <div class="inner">
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Job Title</label> 
+                                                <input type="email" placeholder="Job Title" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Department</label> 
+                                                <input type="email" placeholder="Department" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>Country</label> 
+                                                <input type="email" placeholder="Country" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>State/Region</label> 
+                                                <input type="email" placeholder="State/Region" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>City</label> 
+                                                <input type="email" placeholder="City" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>Code</label> 
+                                                <input type="email" placeholder="Code" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12" style="margin: 12px 0;">
+                                            <label>Job Description</label> 
+                                            <div class="summernote" >
+                                                <h3>Lorem Ipsum is simply</h3>
+                                                dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's</strong> standard dummy text ever since the 1500s,
+                                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                                <br/>
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12" style="margin: 12px 0;">
+                                            <label>Job Description</label> 
+                                            <div class="summernote">
+                                                <h3>Lorem Ipsum is simply</h3>
+                                                dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's</strong> standard dummy text ever since the 1500s,
+                                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                                                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                                <br/>
+                                                <br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Employee Type</label> 
+                                                <input type="email" placeholder="Employee Type" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Category</label> 
+                                                <input type="email" placeholder="Category" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Salary</label> 
+                                                <input type="email" placeholder="Salary" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Required Education</label> 
+                                                <input type="email" placeholder="Required Education" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Required Experience</label> 
+                                                <input type="email" placeholder="Required Experience" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="ibox">
+                                        <div class="ibox-content job-content">
+                                            <ul style="list-style:none;">
+                                                <li><i class="fa fa-circle-o text-danger"></i> Job Title is Required</li>
+                                                <li><i class="fa fa-circle-o text-danger"></i> City is Reqired</li>
+                                                <li><i class="fa fa-circle-o text-danger"></i> State/Region is Reqired</li>
+                                                <li><i class="fa fa-circle-o text-danger"></i> Code is Reqired</li>
+                                                <li><i class="fa fa-circle-o text-danger"></i> Job Requirements is Required</li>
+                                                <li><i class="fa fa-circle-o text-danger"></i> Job Description is Reqired</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="ibox">
+                                        <div class="ibox-content job-content">
+                                            <h4>Do</h4>
+                                            <p>Include at least 700 Chracters. Use formatting like bold headings and lists to make text easier to read.</p>
+                                            <h4>Don't</h4>
+                                            <p>Add a link to apply (one is added automatically).</br>
+                                            Describe more than one job, even if there is more than one opening.</p>
+                                            <h4>Need Inspiration</h4>
+                                            <a href="#">Import sections from our job description templates. They're fully</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- SECTION 2 -->
+                    <h2>
+                        <span class="step-icon"><i class="zmdi zmdi-lock"></i></span>
+                        <span class="step-text">Application Form & Assessment</span>
+                    </h2>
+                    <section>
+                        <div class="inner">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <h4>Personal Information</h4>
+                                        <br>
+                                        <hr>
+                                        <!-- <div class="col-md-12"> -->
+                                            <!-- <div class="form-group"> -->
+                                                <select class="select2_demo_2 form-control" multiple="multiple">
+                                                    <option value="Mayotte">Name</option>
+                                                    <option value="Mayotte">Email</option>
+                                                    <option value="Mayotte">Photo</option>
+                                                    <option value="Mayotte">Address</option>
+                                                    <option value="Mayotte">Mendatory</option>
+                                                </select>
+                                            <!-- </div> -->
+                                        <!-- </div> -->
+                                    </div>
+                                    <hr>
+                                    
+                                    <div class="row">
+                                        <h4>Candidate Profile</h4>
+                                        <br>
+                                        <div class="mail-box" style="width: 100%;">
+                                            <table class="table table-hover table-mail">
+                                                <tbody> 
+                                                <tr class="read">
+                                                    <td class="mail-ontact">Education</a></td>
+                                                    <td class="mail-subject pull-right">
+                                                        <button class="btn btn-success">Mendatory</button>
+                                                        <button class="btn btn-default">Optional</button>
+                                                        <button class="btn btn-warning">Off</button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="read">
+                                                    <td class="mail-ontact">Experience</a></td>
+                                                    <td class="mail-subject pull-right">
+                                                        <button class="btn btn-success">Mendatory</button>
+                                                        <button class="btn btn-default">Optional</button>
+                                                        <button class="btn btn-warning">Off</button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="read">
+                                                    <td class="mail-ontact">Skill</a></td>
+                                                    <td class="mail-subject pull-right">
+                                                        <button class="btn btn-success">Mendatory</button>
+                                                        <button class="btn btn-default">Optional</button>
+                                                        <button class="btn btn-warning">Off</button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="read">
+                                                    <td class="mail-ontact">Portfolio</a></td>
+                                                    <td class="mail-subject pull-right">
+                                                        <button class="btn btn-success">Mendatory</button>
+                                                        <button class="btn btn-default">Optional</button>
+                                                        <button class="btn btn-warning">Off</button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="read">
+                                                    <td class="mail-ontact">Interest</a></td>
+                                                    <td class="mail-subject pull-right">
+                                                        <button class="btn btn-success">Mendatory</button>
+                                                        <button class="btn btn-default">Optional</button>
+                                                        <button class="btn btn-warning">Off</button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="read">
+                                                    <td class="mail-ontact">Profile</a></td>
+                                                    <td class="mail-subject pull-right">
+                                                        <button class="btn btn-success">Mendatory</button>
+                                                        <button class="btn btn-default">Optional</button>
+                                                        <button class="btn btn-warning">Off</button>
+                                                    </td>
+                                                </tr>                                               
+                                                </tbody>
+                                            </table>                                
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="row">
+                                        <h4>Candidate Profile</h4>
+                                        <br>
+                                        <div class="mail-box" style="width: 100%;">
+                                            <table class="table table-hover table-mail">
+                                                <tbody> 
+                                                <tr class="read">
+                                                    <td class="mail-ontact">Cover Letter</a></td>
+                                                    <td class="mail-subject pull-right">
+                                                        <button class="btn btn-success">Mendatory</button>
+                                                        <button class="btn btn-default">Optional</button>
+                                                        <button class="btn btn-warning">Off</button>
+                                                    </td>
+                                                </tr>                                              
+                                                </tbody>
+                                            </table>                                
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>Assessment/Question</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-outline btn-info pull-right">Question Bank</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="">
+                                                <ul class="todo-list m-t">
+                                                    <li>
+                                                        <input type="checkbox" value="" name="" class=""/>
+                                                        <span class="m-l-xs">What is Laravel?</span>
+                                                        <span class="pull-right"><i class="fa fa-wrench"></i></span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" value="" name="" class="" checked/>
+                                                        <span class="m-l-xs">List Some Official packages Provided by laravel?</span>
+                                                        <span class="pull-right"><i class="fa fa-wrench"></i></span>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" value="" name="" class="" />
+                                                        <span class="m-l-xs">Video Interview</span>
+                                                        <span class="pull-right"><i class="fa fa-wrench"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="ibox">
+                                        <div class="ibox-content job-content">
+                                            PREVIEW
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    <!-- SECTION 3 -->
+                    <h2>
+                        <span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+                        <span class="step-text">Hiring Board</span>
+                    </h2>
+                    <section>
+                        <div class="inner">
+                            <h3>Payment Information:</h3>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <input type="radio" name="radio1" id="pay-1" value="pay-1" checked>
+                                    <label class="pay-1-label" for="pay-1"><img src="images/wizard_v3_icon_1.png" alt="pay-1">Credit Card</label>
+                                    <input type="radio" name="radio1" id="pay-2" value="pay-2">
+                                    <label class="pay-2-label" for="pay-2"><img src="images/wizard_v3_icon_2.png" alt="pay-2">Paypal</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder form-holder-2">
+                                    <label class="form-row-inner">
+                                        <input type="text" class="form-control" id="holder" name="holder" required>
+                                        <span class="label">Holder Name*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <label class="form-row-inner">
+                                        <input type="text" class="form-control" id="card" name="card" required>
+                                        <span class="label">Card Number*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                                <div class="form-holder">
+                                    <label class="form-row-inner">
+                                        <input type="text" class="form-control" id="cvc" name="cvc" required>
+                                        <span class="label">CVC*</span>
+                                        <span class="border"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row form-row-date form-row-date-1">
+                                <div class="form-holder form-holder-2">
+                                    <label for="date" class="special-label">Expiry Date*:</label>
+                                    <select name="month_1" id="month_1">
+                                        <option value="Month" disabled selected>Month</option>
+                                        <option value="Feb">Feb</option>
+                                        <option value="Mar">Mar</option>
+                                        <option value="Apr">Apr</option>
+                                        <option value="May">May</option>
+                                    </select>
+                                    <select name="year_1" id="year_1">
+                                        <option value="Year" disabled selected>Year</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </form>
+
+            </div>
+
+            
+
+            <div class="footer">
+                <div class="float-right">
+                    An Innovation From  <strong>Weaver</strong>.
+                </div>
+                <div>
+                    <strong>Copyright</strong> MMC &copy; 2019
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- SUMMERNOTE -->
+    <script src="js/plugins/summernote/summernote-bs4.js"></script>
+    <!-- Select2 -->
+    <script src="js/plugins/select2/select2.full.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.summernote').summernote();
+            $(".select2_demo_2").select2();
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green'
+            });
+
+            $(".todo-list").sortable({
+                placeholder: "sort-highlight",
+                handle: ".handle",
+                forcePlaceholderSize: true,
+                zIndex: 999999
+            }).disableSelection();
+       });
+    </script>
+
+    <!-- form wizard javascript and jquery libraries -->
+    <script src="form_assets/js/jquery.steps.js"></script>
+	<script src="form_assets/js/jquery-ui.min.js"></script>
+	<script src="form_assets/js/main.js"></script>
+
+
+</body>
+
+</html>

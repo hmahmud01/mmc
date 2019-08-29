@@ -9595,3 +9595,9 @@ body.md-skin {
 .edit-member-text {
   margin-left: 32px;
 }
+
+.job-content {
+  border-style: solid solid solid solid;
+  border-width: 1px;
+  background-color: #f2f2f1;
+}
