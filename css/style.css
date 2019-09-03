@@ -9601,3 +9601,8 @@ body.md-skin {
   border-width: 1px;
   background-color: #f2f2f1;
 }
+
+.box-border {
+  border: 1px solid;
+  border-radius: 3px;
+}
