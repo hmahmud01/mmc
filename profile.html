@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MMC | Wever Innovations</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="mini-navbar">
+
+    <div id="wrapper">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <!-- <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a> -->
+                <a class="minimalize-styl-2 btn btn-primary " href="create_job.html"><i class="fa fa-plus"></i> <strong>CREATE</strong> </a>
+                <form role="search" class="navbar-form-custom" action="search_results.html">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control search-position" name="top-search" id="top-search">
+                    </div>
+                </form>
+            </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <div class="dropdown profile-element" style="margin-right:20px;">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="block" style="color:black">Weaver Innovations<b class="caret"></b></span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInTop m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="profile.html">
+                                        <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <small class="float-right">46h ago</small>
+                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="profile.html">
+                                        <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="float-right text-navy">5h ago</small>
+                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="profile.html">
+                                        <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="float-right">23h ago</small>
+                                        <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                        <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="mailbox.html" class="dropdown-item">
+                                        <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="mailbox.html" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                        <span class="float-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a href="profile.html" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="float-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a href="grid_options.html" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="float-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="notifications.html" class="dropdown-item">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+    
+    
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+    
+            </nav>
+        </div>
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li>
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Index</span> </a>
+                    </li>
+                    <li>
+                        <a href="jobs.html"><i class="fa fa-briefcase"></i> <span class="nav-label">Jobs</span> </a>
+                    </li>
+                    <li class="active">
+                        <a href="candidates.html"><i class="fa fa-user"></i> <span class="nav-label">Candidates</span> </a>
+                    </li>
+                    <li>
+                        <a href="team.html"><i class="fa fa-users"></i> <span class="nav-label">Team</span> </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-sm-4">
+                    <h2>Home</h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">This is</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <strong>All Profile</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-md-3 right-zero">
+                        <div class="ibox">
+                            <div class="ibox-title title-box-height">
+                                <h1 class="title-margin text-white">Applied</h1>
+                                <hr class="title-dash">
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="ibox-content text-center profile-border">
+                                            
+                                            <div class="m-b-sm">
+                                                <img alt="image" class="rounded-circle appli-width" src="img/a8.jpg">
+                                            </div>
+                                            <h4 class="no-b-m">Nicki Smith</h4>
+                                            <p class="half-b-margin">Software Engineer @ Soft Tech</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="ibox-content text-center profile-border">
+                                            
+                                            <div class="m-b-sm">
+                                                <img alt="image" class="rounded-circle appli-width" src="img/a3.jpg">
+                                            </div>
+                                            <h4 class="no-b-m">Nicki Smith</h4>
+                                            <p class="half-b-margin">Software Engineer @ Soft Tech</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="ibox-content text-center profile-border">
+                                            
+                                            <div class="m-b-sm">
+                                                <img alt="image" class="rounded-circle appli-width" src="img/a2.jpg">
+                                            </div>
+                                            <h4 class="no-b-m">Nicki Smith</h4>
+                                            <p class="half-b-margin">Software Engineer @ Soft Tech</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="ibox-content text-center profile-border">
+                                            
+                                            <div class="m-b-sm">
+                                                <img alt="image" class="rounded-circle appli-width" src="img/a7.jpg">
+                                            </div>
+                                            <h4 class="no-b-m">Nicki Smith</h4>
+                                            <p class="half-b-margin">Software Engineer @ Soft Tech</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="ibox-content text-center profile-border">
+                                            
+                                            <div class="m-b-sm">
+                                                <img alt="image" class="rounded-circle appli-width" src="img/a2.jpg">
+                                            </div>
+                                            <h4 class="no-b-m">Nicki Smith</h4>
+                                            <p class="half-b-margin">Software Engineer @ Soft Tech</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 left-zero">
+                        <div class="ibox">
+                            <div class="ibox-title title-box-height">
+                                <div class="row" style="margin-left:-30px;">
+                                    <div class="col-md-2" style="padding: 0px 0px 0px 30px;">
+                                        <img alt="image" class="rounded-circle profile-thumb" src="img/a3.jpg">
+                                    </div>
+                                    <div class="col-md-6" style="padding: 0px; margin-top:12px;">
+                                        <h3 class="text-white no-b-m">Nicki Smith</h3>
+                                        <p class="margin-zero">Position: Executive, Business Development</p>
+                                        <p class="margin-zero">Status: Applied</p>
+
+                                    </div>
+                                    <div class="col-md-3 pull-right">
+                                        <buttn class="btn btn-outline btn-primary">Select</buttn>
+                                        <buttn class="btn btn-outline btn-warning">Tag</buttn>
+                                        <buttn class="btn btn-outline btn-danger">Reject</buttn>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="tabs-container">
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li><a class="nav-link active" data-toggle="tab" href="#details"> Details</a></li>
+                                                <li><a class="nav-link" data-toggle="tab" href="#experience">Experience</a></li>
+                                                <li><a class="nav-link" data-toggle="tab" href="#appli">Applinterview</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div role="tabpanel" id="details" class="tab-pane active">
+                                                    <div class="panel-body">
+                                                        <div class="candidate-detail">
+                                                            <div class="profile-content">
+                                                                <h4 class="text-black">Education</h4>
+                                                                <hr class="underscore">
+                                                                <br>
+                                                                <strong>B.sc in Computer Science & Engineering.</strong>
+                                                                <p class="margin-zero">Internation Islamic University Chittagong</p>
+                                                                <p class="margin-zero">CGPA-3.526 out of 4.00</p>
+                                                                <p class="margin-zero">Mar 2014 - Sep 2018</p>
+                                                            </div>
+                                                            
+                                                            <div class="profile-content">
+                                                                <h4>Training</h4>
+                                                                <hr class="underscore">
+                                                                <br>
+                                                                <strong>Android Apps Development,</strong>
+                                                                <p class="margin-zero">Top-Up IT Training, LICT, Technoshore Platform, Chittagong.</p>
+                                                                <p class="margin-zero">May 2016 - Aug 2016</p>
+
+                                                                <strong>Web Application Development on Php</strong>
+                                                                <p class="margin-zero">SEIP Project, BITM, Chittagong</p>
+                                                                <p class="margin-zero">Jan 2018 - Mar 2018</p>
+                                                            </div>
+                                                            
+                                                            <div class="profile-content">
+                                                                <h4>Address</h4>
+                                                                <hr class="underscore">
+                                                                <br>
+                                                                <p class="margin-zero">1155, Didar Mansion, Sitol Jorna R/A, Oxygen, Chittagong, Bangladesh</p>
+                                                            </div>
+
+                                                            <div class="profile-content">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <h4>Social Profile</h4>
+                                                                        <hr class="underscore">
+                                                                        <br>
+                                                                        <p class="margin-zero"><strong>LinkedIn:</strong> /sajjad014</p>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <h4>Contact Points</h4>
+                                                                        <hr class="underscore">
+                                                                        <br>
+                                                                        <p class="margin-zero"><strong>Email:</strong> sajjad014@yahoo.com</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" id="experience" class="tab-pane">
+                                                    <div class="panel-body">
+                                                        <strong>Donec quam felis</strong>
+
+                                                        <p>Thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects
+                                                            and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath </p>
+
+                                                        <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite
+                                                            sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet.</p>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" id="appli" class="tab-pane">
+                                                    <div class="panel-body">
+                                                        <strong>Donec quam felis</strong>
+
+                                                        <p>Thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects
+                                                            and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath </p>
+
+                                                        <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite
+                                                            sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="tabs-container">
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li><a class="nav-link active" data-toggle="tab" href="#team"> Team Notes</a></li>
+                                                <li><a class="nav-link" data-toggle="tab" href="#score">Scoreboard</a></li>
+                                                <li><a class="nav-link" data-toggle="tab" href="#email">Email</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div role="tabpanel" id="team" class="tab-pane active">
+                                                    <div class="panel-body">
+                                                        <div class="team-content">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <label>Notes</label>
+                                                                    <textarea class="form-control" name="note" id="note" cols="30" rows="3">Take Notes</textarea>                                                                    
+                                                                </div>
+                                                                <div class="pull-right">
+                                                                    <button class="btn btn-info">Post</button>
+                                                                </div>                                                                
+                                                            </form>
+                                                        </div>
+
+                                                        <div class="comments-content">
+                                                            <strong>Notes taken</strong>
+                                                            <div id="vertical-timeline" class="vertical-container dark-timeline" style="width:100%;">
+                                                                <div class="vertical-timeline-block">
+                                                                    <div class="vertical-timeline-icon timeline-ico navy-bg">
+                                                                        <!-- <i class="fa fa-briefcase"></i> -->
+                                                                    </div>
+                                                                    <div class="vertical-timeline-content timeline-left">
+                                                                        <p><strong>User Name</strong> <small>added a note</small></p>
+                                                                        <p>Notes about the candidate.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="vertical-timeline-block">
+                                                                    <div class="vertical-timeline-icon timeline-ico navy-bg">
+                                                                        <!-- <i class="fa fa-bolt"></i> -->
+                                                                    </div>
+                                                                    <div class="vertical-timeline-content timeline-left">
+                                                                        <p><strong>User Name</strong> <small>added a note</small></p>
+                                                                        <p>Notes about the candidate.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="vertical-timeline-block">
+                                                                    <div class="vertical-timeline-icon timeline-ico navy-bg">
+                                                                        <!-- <i class="fa fa-warning"></i> -->
+                                                                    </div>
+                                                                    <div class="vertical-timeline-content timeline-left">
+                                                                        <p><strong>User Name</strong> <small>added a note</small></p>
+                                                                        <p>Notes about the candidate.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" id="score" class="tab-pane">
+                                                    <div class="panel-body">
+                                                        <div class="tabs-container">
+                                                            <ul class="nav nav-tabs" role="tablist">
+                                                                <li><a class="nav-link active" data-toggle="tab" href="#overall"> Over all</a></li>
+                                                                <li><a class="nav-link" data-toggle="tab" href="#my">My Score</a></li>
+                                                            </ul>
+                                                            <div class="tab-content">
+                                                                <div role="tabpanel" id="overall" class="tab-pane active">
+                                                                    <div class="col-md-12">
+                                                                        <label for="work">Work Experience</label>
+                                                                        <div data-toggle="buttons-checkbox" class="btn-group">
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i><i class="fa fa-thumbs-down"></i> <br> Very Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i> <br> Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-circle"></i> </button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i> <br> Good</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i><i class="fa fa-thumbs-up"></i> <br> Very Good</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-12">
+                                                                        <label for="work">Education</label>
+                                                                        <div data-toggle="buttons-checkbox" class="btn-group">
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i><i class="fa fa-thumbs-down"></i> <br> Very Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i> <br> Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-circle"></i> </button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i> <br> Good</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i><i class="fa fa-thumbs-up"></i> <br> Very Good</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-12">
+                                                                        <label for="work">Passionate to work</label>
+                                                                        <div data-toggle="buttons-checkbox" class="btn-group">
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i><i class="fa fa-thumbs-down"></i> <br> Very Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i> <br> Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-circle"></i> </button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i> <br> Good</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i><i class="fa fa-thumbs-up"></i> <br> Very Good</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <h4>Overall Rating</h4>
+                                                                        <h3>04</h3>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                                <div role="tabpanel" id="my" class="tab-pane active">
+                                                                    <div class="col-md-12">
+                                                                        <label for="work">Work Experience</label>
+                                                                        <div data-toggle="buttons-checkbox" class="btn-group">
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i><i class="fa fa-thumbs-down"></i> <br> Very Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i> <br> Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-circle"></i> </button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i> <br> Good</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i><i class="fa fa-thumbs-up"></i> <br> Very Good</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-12">
+                                                                        <label for="work">Education</label>
+                                                                        <div data-toggle="buttons-checkbox" class="btn-group">
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i><i class="fa fa-thumbs-down"></i> <br> Very Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i> <br> Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-circle"></i> </button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i> <br> Good</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i><i class="fa fa-thumbs-up"></i> <br> Very Good</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-12">
+                                                                        <label for="work">Passionate to work</label>
+                                                                        <div data-toggle="buttons-checkbox" class="btn-group">
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i><i class="fa fa-thumbs-down"></i> <br> Very Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-down"></i> <br> Poor</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-circle"></i> </button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i> <br> Good</button>
+                                                                            <button class="btn btn-sm btn-default" type="button"><i class="fa fa-thumbs-up"></i><i class="fa fa-thumbs-up"></i> <br> Very Good</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <h4>Overall Rating</h4>
+                                                                        <h3>04</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" id="email" class="tab-pane">
+                                                    <div class="panel-body">
+                                                        <div class="mail-box">
+                                                            <form method="get">
+                                                                <div class="mail-body">
+                                                                    <div class="form-group row"><label class="col-sm-2 col-form-label">From:</label>
+                                                                        <div class="col-sm-10"><input type="text" class="form-control" value="career@weaverbd.com"></div>
+                                                                    </div>
+                                                                    <div class="form-group row"><label class="col-sm-2 col-form-label">To:</label>
+                                                                        <div class="col-sm-10"><input type="text" class="form-control" value="alex.smith@corporat.com"></div>
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label>Subject</label>
+                                                                        <textarea class="form-control" name="note" id="note" cols="30" rows="2">Subject</textarea>                                                                    
+                                                                    </div>
+
+                                                                    <div class="form-group">
+                                                                        <label>Compose email</label>
+                                                                        <textarea class="form-control" name="note" id="note" cols="30" rows="2">Compose email</textarea>                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mail-body text-right tooltip-demo">
+                                                                    <a href="#" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Send"><i class="fa fa-reply"></i> Send</a>                                                                
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="float-right">
+                    An Innovation From  <strong>Weaver</strong>.
+                </div>
+                <div>
+                    <strong>Copyright</strong> MMC &copy; 2019
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+
+</body>
+
+</html>

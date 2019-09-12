@@ -371,17 +371,17 @@
                                         <h4>Personal Information</h4>
                                         <br>
                                         <hr>
-                                        <!-- <div class="col-md-12"> -->
+                                        <div class="col-md-11">
                                             <!-- <div class="form-group"> -->
-                                                <select class="select2_demo_2 form-control" multiple="multiple">
-                                                    <option value="Mayotte">Name</option>
-                                                    <option value="Mayotte">Email</option>
-                                                    <option value="Mayotte">Photo</option>
-                                                    <option value="Mayotte">Address</option>
-                                                    <option value="Mayotte">Mendatory</option>
+                                                <select class="select2_demo_2 form-control" name="properties[]" multiple="multiple">
+                                                    <option value="name">Name</option>
+                                                    <option value="email">Email</option>
+                                                    <option value="photo">Photo</option>
+                                                    <option value="address">Address</option>
+                                                    <option value="mendatory">Mendatory</option>
                                                 </select>
                                             <!-- </div> -->
-                                        <!-- </div> -->
+                                        </div>
                                     </div>
                                     <hr>
                                     
@@ -560,7 +560,10 @@
     <script>
         $(document).ready(function(){
             $('.summernote').summernote();
-            $(".select2_demo_2").select2();
+            
+            $(".select2_demo_2").select2({
+                placeholder: "Select Properties",
+            });
             $('.i-checks').iCheck({
                 checkboxClass: 'icheckbox_square-green',
                 radioClass: 'iradio_square-green'

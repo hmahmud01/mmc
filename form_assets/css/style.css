@@ -164,8 +164,12 @@ body {
 .form-register .steps li a .step-text {
 	color: #999;
 	font-weight: 400;
-	font-size: 18px;
-	padding:  14px 0 8px;
+	font-size: 16px;
+	/* padding:  14px 0 8px; */
+	/* below are the properties added to adjust */
+	padding: 14px 0px 14px 88px;
+	width: 70%;
+	text-align: center;
 }
 .form-register .steps .current .step-text,
 .form-register .steps .done .step-text {
